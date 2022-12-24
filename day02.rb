@@ -6,7 +6,7 @@ DRAW = 3
 LOSE = 0
 ROUNDS = File.readlines('day02.txt')
 
-# Part 1
+puts "Part 1"
 
 def outcome(my_move, his_move)
     return DRAW if my_move == his_move
@@ -21,7 +21,7 @@ score = ROUNDS.sum do |round|
 end
 puts score
 
-# Part 2
+puts "Part 2"
 
 INSTRUCTIONS = { X: LOSE, Y: DRAW, Z: WIN }
 score2 = ROUNDS.sum do |round|

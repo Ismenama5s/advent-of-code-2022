@@ -1,4 +1,4 @@
-# Part 1
+puts "Part 1"
 
 elves = File.read('day01.txt')
             .split("\n\n")
@@ -6,7 +6,7 @@ elves = File.read('day01.txt')
 
 puts elves.max_by(&:sum).sum
 
-# Part 2
+puts "Part 2"
 
 puts elves.max_by(3, &:sum).flatten.sum
 
